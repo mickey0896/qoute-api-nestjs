@@ -23,7 +23,6 @@ export class UserService {
     return this.userModel.findById(id).exec();
   }
 
-  // อัพเดต user โดย id และข้อมูลบางส่วน (partial update)
   async update(
     id: string,
     updateData: Partial<User>,
